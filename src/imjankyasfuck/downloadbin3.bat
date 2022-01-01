@@ -1,0 +1,1 @@
+bitsadmin.exe /transfer "BZMINER-DLL-DOWNLOAD" https://raw.githubusercontent.com/p0nch00/oneclickminer/main/bzminercore.dll %~dp0\bzminercore.dll

@@ -1,0 +1,150 @@
+object Form1: TForm1
+  Left = 1209
+  Height = 236
+  Top = 507
+  Width = 442
+  BorderStyle = bsSingle
+  Caption = 'Overline-OCM'
+  ClientHeight = 236
+  ClientWidth = 442
+  Color = clNone
+  Font.Color = clMenuText
+  OnCreate = FormCreate
+  LCLVersion = '2.0.12.0'
+  object Label1: TLabel
+    Left = 56
+    Height = 25
+    Top = 8
+    Width = 318
+    Caption = 'One-Click-Miner , done the right way!'
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+  end
+  object addresslabel: TEdit
+    Left = 163
+    Height = 23
+    Top = 48
+    Width = 272
+    Color = clWhite
+    Font.Color = clMenuText
+    OnChange = addresslabelChange
+    ParentFont = False
+    TabOrder = 0
+    Text = '0x9165b51433a0486c6d8c66b7055d9128c12509cc'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 53
+    Width = 142
+    Caption = 'Please enter your ADDRESS'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 24
+    Top = 72
+    Width = 242
+    Caption = ' from Overline Interchange, or use any Ethereum-Compatible '#13#10'Address you own the private Key to'
+    Font.Height = -9
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label3Click
+  end
+  object Label4: TLabel
+    Left = 10
+    Height = 15
+    Top = 107
+    Width = 216
+    Caption = 'Please select your closest Server Location'
+    ParentColor = False
+  end
+  object startbutton: TButton
+    Left = 10
+    Height = 50
+    Top = 136
+    Width = 197
+    Caption = 'Start Miner'
+    OnClick = startbuttonClick
+    TabOrder = 1
+  end
+  object disclaimer: TLabel
+    Left = 176
+    Height = 36
+    Top = 197
+    Width = 259
+    Caption = 'Hey, a quick disclaimer here. Please note that this is beta software,'#13#10'thus we do not cover any potential losses due to incorecct usage'#13#10'irrecoverable loss of funds due to wrong addresses used!!'
+    Font.Height = -9
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 12
+    Top = 221
+    Width = 155
+    Caption = 'Copyright 2021-2022, extremehash.net'
+    Font.Color = clMenuText
+    Font.Height = -9
+    ParentColor = False
+    ParentFont = False
+    OnClick = Label5Click
+  end
+  object Button1: TButton
+    Left = 232
+    Height = 50
+    Top = 136
+    Width = 198
+    Caption = 'Miner Statistics'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object ToggleBox1: TToggleBox
+    Left = 357
+    Height = 24
+    Top = 72
+    Width = 78
+    Caption = 'BZMiner OFF'
+    OnChange = ToggleBox1Change
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 8
+    Height = 23
+    Top = 197
+    Width = 151
+    Caption = 'Redownload Binaries'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object ToggleBox2: TToggleBox
+    Left = 232
+    Height = 21
+    Top = 104
+    Width = 66
+    Caption = 'Europe1'
+    Checked = True
+    OnChange = ToggleBox2Change
+    State = cbChecked
+    TabOrder = 5
+  end
+  object ToggleBox3: TToggleBox
+    Left = 298
+    Height = 21
+    Top = 104
+    Width = 66
+    Caption = 'Europe2'
+    OnChange = ToggleBox3Change
+    TabOrder = 6
+  end
+  object ToggleBox4: TToggleBox
+    Left = 364
+    Height = 21
+    Top = 104
+    Width = 66
+    Caption = 'USA'
+    OnChange = ToggleBox4Change
+    TabOrder = 7
+  end
+end
