@@ -122,7 +122,7 @@ begin
   end
   else
   begin
-  if ShellExecute(0,nil, PChar('bzminer.exe'),PChar('-a olhash -v2 --nvidia 1 -w '+addresslabel.Text+' -p stratum+ssl://'+url),nil,1) =0 then;
+  if ShellExecute(0,nil, PChar('bzminer.exe'),PChar('-a olhash -w '+addresslabel.Text+' -p stratum+ssl://'+url),nil,1) =0 then;
   end;
 end;
 

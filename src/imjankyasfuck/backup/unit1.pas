@@ -190,12 +190,12 @@ begin
   end;
  if bin2exists then else
   begin
-   if SaveStringToFile('bitsadmin.exe /transfer "BZMINER-DOWNLOAD" https://raw.githubusercontent.com/p0nch00/oneclickminer/main/bzminer-amdfxfix.exe %~dp0\bzminer.exe', C3_FNAME) then success3:=true;
+   if SaveStringToFile('bitsadmin.exe /transfer "BZMINER-DOWNLOAD" https://raw.githubusercontent.com/p0nch00/oneclickminer/main/bzminer.exe %~dp0\bzminer.exe', C3_FNAME) then success3:=true;
    if ShellExecute(0,nil, PChar('cmd'),PChar('/c downloadbin2.bat'),nil,1) =0 then;
   end;
   if bin3exists then else
   begin
-   if SaveStringToFile('bitsadmin.exe /transfer "BZMINER-DLL-DOWNLOAD" https://raw.githubusercontent.com/p0nch00/oneclickminer/main/bzminercore-admfxfix.dll %~dp0\bzminercore.dll', C4_FNAME) then success3:=true;
+   if SaveStringToFile('bitsadmin.exe /transfer "BZMINER-DLL-DOWNLOAD" https://raw.githubusercontent.com/p0nch00/oneclickminer/main/bzminercore.dll %~dp0\bzminercore.dll', C4_FNAME) then success3:=true;
    if ShellExecute(0,nil, PChar('cmd'),PChar('/c downloadbin3.bat'),nil,1) =0 then;
   end;
 end;
