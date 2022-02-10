@@ -118,11 +118,11 @@ end;
 procedure TForm1.startbuttonClick(Sender: TObject);
 begin
   if (miner='olminer') then begin
-  if ShellExecute(0,nil, PChar('olminer.exe'),PChar('--cuda -P stratum1+ssl://'+addresslabel.Text+'.OneClickMiner@'+url),nil,1) =0 then;
+  if ShellExecute(0,nil, PChar('olminer.exe'),PChar('--cuda -P stratum1+tcp://'+addresslabel.Text+'.OneClickMiner@stratum.extremehash.net:3142'),nil,1) =0 then;
   end
   else
   begin
-  if ShellExecute(0,nil, PChar('bzminer.exe'),PChar('-a olhash -w '+addresslabel.Text+' -p stratum+ssl://'+url),nil,1) =0 then;
+  if ShellExecute(0,nil, PChar('bzminer.exe'),PChar('-a olhash -w '+addresslabel.Text+' -p stratum+tcp://stratum.extremehash.net:3142'),nil,1) =0 then;
   end;
 end;
 
